@@ -34,3 +34,15 @@ scatter(r_vals, x_vals,
         title = "Diagrama de Bifurcación (Mapa Logístico)",
         xlabel = "Tasa de crecimiento (r)",
         ylabel = "Población (x)")
+
+p = scatter(r_vals, x_vals, 
+        markersize = 0.5, 
+        markeralpha = 0.1, 
+        legend = false, 
+        color = :cyan, 
+        title = "Diagrama de Bifurcación (Mapa Logístico)",
+        xlabel = "Tasa de crecimiento (r)",
+        ylabel = "Población (x)")
+
+savefig(p, "bifurcacion.png")
+println("¡Gráfico generado! Revisa la carpeta ChaosJulia.")
